@@ -1,0 +1,262 @@
+@keyframes slideBanner {
+    0% {
+        transform: translateX(0vw);
+        animation-delay: 2s;
+    }
+    16% {
+        transform: translateX(-100vw);
+        animation-delay: 2s;
+
+    }
+    32% {
+        transform: translateX(-200vw);
+        animation-delay: 2s;
+
+        
+    }
+    48% {
+        transform: translateX(-300vw);
+        animation-delay: 2s;
+
+        
+    }
+    64% {
+        transform: translateX(-200vw);
+        animation-delay: 2s;
+        
+    }
+    80% {
+        transform: translateX(-100vw);
+        animation-delay: 2s;
+
+    }
+    100% {
+        transform: translateX(0vw);
+        animation-delay: 2s;
+
+    }
+
+}
+
+
+
+
+
+
+
+.banner {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .bannerClass{
+        position: relative;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        justify-items: center;
+        .banner-container {
+            position: relative;
+            width: 400vw;
+            height: fit-content;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            width: fit-content;
+            gap: 0em;
+            animation: slideBannera 40s ease-in-out infinite;
+            animation-delay: 4s;
+            .product1, .product2, .product3, .product4 {
+                position: relative;
+                height: fit-content;
+                grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+                justify-items: center;
+                align-items: center;
+                display: grid;
+                background-image: linear-gradient(to left ,rgb(156, 30, 30), #325);
+                width: 100vw;
+                .banner-image-container {
+                    width: 100%;
+                    list-style: none;
+                    display: grid;
+                    place-items: center;
+                    li {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            min-width:60% ;
+                            max-width: 100%;
+                        }
+                    }
+                }
+                .productDetail {
+                    padding-right: 2vw;
+                    height: fit-content;
+                    width: 100%;
+                    ul {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 1fr 1fr 1fr;
+                        li {
+                            display: grid;
+                            align-items: center;
+                            h1 {
+                                background-image: linear-gradient( rgb(248, 203, 78) , #fff);
+                                font-size: 4vw;
+                                -webkit-text-fill-color: transparent;
+                                -webkit-background-clip: text;
+                            }
+                            p {
+                                color: #fff;
+                                font-size: 1.1vw ;
+                            }
+                            input {
+                                background-image: linear-gradient(to right , rgb(248, 203, 78) ,#ccc);
+                                height: 3vw;
+                                width: 15vw;
+                                font-size: 1vw;
+                                color: #333;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}   
+
+@media only screen and (max-width:600px) {
+    .product1, .product2, .product3, .product4 {
+        grid-template-rows: 1fr 1fr;
+        position: relative;
+        height: fit-content;
+        grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        background-image: linear-gradient(to left ,rgb(156, 30, 30), #325);
+        width: 100vw;
+        .banner-image-container {
+            width: 100%;
+            list-style: none;
+            display: grid;
+            place-items: center;
+            li {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                img {
+                    min-width:60% ;
+                    max-width: 100%;
+                }
+            }
+        }
+        .productDetail {
+            padding-right: 2vw;
+            height: fit-content;
+            width: 100%;
+            ul {
+                place-items: center;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                li {
+                    display: grid;
+                    align-items: center;
+                    h1 {
+                        background-image: linear-gradient( rgb(248, 203, 78) , #fff);
+                        font-size: 10vw !important;
+                        -webkit-text-fill-color: transparent;
+                        -webkit-background-clip: text;
+                    }
+                    p {
+                        text-align: center;
+                        color: #fff;
+                        font-size: 4.1vw !important;
+                    }
+                    input {
+                        background-image: linear-gradient(to right , rgb(248, 203, 78) ,#ccc);
+                        height: 10vw !important;
+                        width: 50vw !important;
+                        font-size: 3.5vw !important;
+                        color: #333;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

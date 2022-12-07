@@ -1,0 +1,239 @@
+@-webkit-keyframes slideBanner {
+  0% {
+    transform: translateX(0vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  16% {
+    transform: translateX(-100vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  32% {
+    transform: translateX(-200vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  48% {
+    transform: translateX(-300vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  64% {
+    transform: translateX(-200vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  80% {
+    transform: translateX(-100vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  100% {
+    transform: translateX(0vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+}
+@keyframes slideBanner {
+  0% {
+    transform: translateX(0vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  16% {
+    transform: translateX(-100vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  32% {
+    transform: translateX(-200vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  48% {
+    transform: translateX(-300vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  64% {
+    transform: translateX(-200vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  80% {
+    transform: translateX(-100vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  100% {
+    transform: translateX(0vw);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+}
+.banner {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.banner .bannerClass {
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-items: center;
+}
+.banner .bannerClass .banner-container {
+  position: relative;
+  width: 400vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 0em;
+  -webkit-animation: slideBannera 40s ease-in-out infinite;
+          animation: slideBannera 40s ease-in-out infinite;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.banner .bannerClass .banner-container .product1, .banner .bannerClass .banner-container .product2, .banner .bannerClass .banner-container .product3, .banner .bannerClass .banner-container .product4 {
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  background-image: linear-gradient(to left, rgb(156, 30, 30), #325);
+  width: 100vw;
+}
+.banner .bannerClass .banner-container .product1 .banner-image-container, .banner .bannerClass .banner-container .product2 .banner-image-container, .banner .bannerClass .banner-container .product3 .banner-image-container, .banner .bannerClass .banner-container .product4 .banner-image-container {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  place-items: center;
+}
+.banner .bannerClass .banner-container .product1 .banner-image-container li, .banner .bannerClass .banner-container .product2 .banner-image-container li, .banner .bannerClass .banner-container .product3 .banner-image-container li, .banner .bannerClass .banner-container .product4 .banner-image-container li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.banner .bannerClass .banner-container .product1 .banner-image-container li img, .banner .bannerClass .banner-container .product2 .banner-image-container li img, .banner .bannerClass .banner-container .product3 .banner-image-container li img, .banner .bannerClass .banner-container .product4 .banner-image-container li img {
+  min-width: 60%;
+  max-width: 100%;
+}
+.banner .bannerClass .banner-container .product1 .productDetail, .banner .bannerClass .banner-container .product2 .productDetail, .banner .bannerClass .banner-container .product3 .productDetail, .banner .bannerClass .banner-container .product4 .productDetail {
+  padding-right: 2vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+.banner .bannerClass .banner-container .product1 .productDetail ul, .banner .bannerClass .banner-container .product2 .productDetail ul, .banner .bannerClass .banner-container .product3 .productDetail ul, .banner .bannerClass .banner-container .product4 .productDetail ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.banner .bannerClass .banner-container .product1 .productDetail ul li, .banner .bannerClass .banner-container .product2 .productDetail ul li, .banner .bannerClass .banner-container .product3 .productDetail ul li, .banner .bannerClass .banner-container .product4 .productDetail ul li {
+  display: grid;
+  align-items: center;
+}
+.banner .bannerClass .banner-container .product1 .productDetail ul li h1, .banner .bannerClass .banner-container .product2 .productDetail ul li h1, .banner .bannerClass .banner-container .product3 .productDetail ul li h1, .banner .bannerClass .banner-container .product4 .productDetail ul li h1 {
+  background-image: linear-gradient(rgb(248, 203, 78), #fff);
+  font-size: 4vw;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.banner .bannerClass .banner-container .product1 .productDetail ul li p, .banner .bannerClass .banner-container .product2 .productDetail ul li p, .banner .bannerClass .banner-container .product3 .productDetail ul li p, .banner .bannerClass .banner-container .product4 .productDetail ul li p {
+  color: #fff;
+  font-size: 1.1vw;
+}
+.banner .bannerClass .banner-container .product1 .productDetail ul li input, .banner .bannerClass .banner-container .product2 .productDetail ul li input, .banner .bannerClass .banner-container .product3 .productDetail ul li input, .banner .bannerClass .banner-container .product4 .productDetail ul li input {
+  background-image: linear-gradient(to right, rgb(248, 203, 78), #ccc);
+  height: 3vw;
+  width: 15vw;
+  font-size: 1vw;
+  color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+  .product1, .product2, .product3, .product4 {
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    background-image: linear-gradient(to left, rgb(156, 30, 30), #325);
+    width: 100vw;
+  }
+  .product1 .banner-image-container, .product2 .banner-image-container, .product3 .banner-image-container, .product4 .banner-image-container {
+    width: 100%;
+    list-style: none;
+    display: grid;
+    place-items: center;
+  }
+  .product1 .banner-image-container li, .product2 .banner-image-container li, .product3 .banner-image-container li, .product4 .banner-image-container li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .product1 .banner-image-container li img, .product2 .banner-image-container li img, .product3 .banner-image-container li img, .product4 .banner-image-container li img {
+    min-width: 60%;
+    max-width: 100%;
+  }
+  .product1 .productDetail, .product2 .productDetail, .product3 .productDetail, .product4 .productDetail {
+    padding-right: 2vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
+  .product1 .productDetail ul, .product2 .productDetail ul, .product3 .productDetail ul, .product4 .productDetail ul {
+    place-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .product1 .productDetail ul li, .product2 .productDetail ul li, .product3 .productDetail ul li, .product4 .productDetail ul li {
+    display: grid;
+    align-items: center;
+  }
+  .product1 .productDetail ul li h1, .product2 .productDetail ul li h1, .product3 .productDetail ul li h1, .product4 .productDetail ul li h1 {
+    background-image: linear-gradient(rgb(248, 203, 78), #fff);
+    font-size: 10vw !important;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  .product1 .productDetail ul li p, .product2 .productDetail ul li p, .product3 .productDetail ul li p, .product4 .productDetail ul li p {
+    text-align: center;
+    color: #fff;
+    font-size: 4.1vw !important;
+  }
+  .product1 .productDetail ul li input, .product2 .productDetail ul li input, .product3 .productDetail ul li input, .product4 .productDetail ul li input {
+    background-image: linear-gradient(to right, rgb(248, 203, 78), #ccc);
+    height: 10vw !important;
+    width: 50vw !important;
+    font-size: 3.5vw !important;
+    color: #333;
+  }
+}/*# sourceMappingURL=banner.css.map */
