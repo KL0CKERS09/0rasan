@@ -73,6 +73,7 @@
   }
 }
 .banner {
+  margin-top: 7.5em;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -106,16 +107,14 @@
   width: -moz-fit-content;
   width: fit-content;
   gap: 0em;
-  -webkit-animation: slideBannera 40s ease-in-out infinite;
-          animation: slideBannera 40s ease-in-out infinite;
+  -webkit-animation: slideBanner 40s ease-in-out infinite;
+          animation: slideBanner 40s ease-in-out infinite;
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
 }
 .banner .bannerClass .banner-container .product1, .banner .bannerClass .banner-container .product2, .banner .bannerClass .banner-container .product3, .banner .bannerClass .banner-container .product4 {
   position: relative;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
   align-items: center;
